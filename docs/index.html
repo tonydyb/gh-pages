@@ -13,7 +13,18 @@
 </main>
 
 <script>
-console.log('GitHub Pages Sample');
+$.ajax({
+  type: 'POST',
+  url: 'https://XXXX.cybozu.com/k/v1/record.json',
+  data: {"app": 999,"record":{"title":{"value":"test"}}},
+  headers: {
+    'X-Cybozu-API-Token': 'AAAAAAAAAAAAAAA',
+    'X-Cybozu-Authorization': 'BBBBBBBBBBBBBB',
+    'Content-Type': 'application/json',
+  },
+}).then(function(response){
+  console.log(response)
+})
 </script>
 </body>
 </html>
