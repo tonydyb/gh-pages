@@ -15,14 +15,8 @@
 
 <script>
 $.ajax({
-  type: 'POST',
-  url: 'https://cors.io/?https://XXXX.cybozu.com/k/v1/record.json',
-  data: {"app": 999,"record":{"title":{"value":"test"}}},
-  headers: {
-    'X-Cybozu-API-Token': 'AAAAAAAAAAAAAAA',
-    'X-Cybozu-Authorization': 'BBBBBBBBBBBBBB',
-    'Content-Type': 'application/json',
-  },
+  type: 'GET',
+  url: 'http://swing8306.ding-tokyo.info',
 }).then(function(response){
   console.log(response)
 })
