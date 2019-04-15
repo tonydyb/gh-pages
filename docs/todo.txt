@@ -1,0 +1,29 @@
+urgent
+iphone XR -> iphone 8
+
+passive stock
+1, current_position page, api
+
+2, profit > 10,000yen or profit_rate > 5% alert per day, check per minute
+
+3, profit > 10,000yen or profit_rate > 5% order fill(create or edit with current rate).
+
+4, honda history swing test. pivot: last month middle rate.
+
+5, github page(javascript ajax https) -> position page (9:00 - 11:30, 12:30 - 15:00)
+
+jquery.min.js:4 Mixed Content: The page at 'https://tonydyb.github.io/gh-pages/' was loaded over HTTPS,
+but requested an insecure XMLHttpRequest endpoint 'http://sw'. This request has been blocked;
+the content must be served over HTTPS.
+
+4/15 - 4/28
+1，arbi indexをblankにする
+2，current_position https page, api
+3，
+
+5/1
+1, 冰箱门反转
+2, 衣柜加横杠，横着挂衣服
+3, 冬天衣服洗好收纳，春夏衣服整理
+4, 永驻申请资料调查，准备
+5, 多摩川→六本木 ６ヶ月定期購入
