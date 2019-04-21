@@ -1,5 +1,4 @@
 urgent
-iphone XR -> iphone 8
 
 passive stock
 1, current_position page, api
@@ -17,7 +16,6 @@ but requested an insecure XMLHttpRequest endpoint 'http://sw'. This request has 
 the content must be served over HTTPS.
 
 4/15 - 4/28
-1，arbi indexをblankにする
 2，current_position https page, api
 3，
 
