@@ -1,7 +1,10 @@
 urgent
 
 passive stock
-1, current_position page, api
+
+1, 千代田化工建設 < 300,间隔10点 每天定投
+
+2, current_position page, api
 
 2, profit > 10,000yen or profit_rate > 5% alert per day, check per minute
 
@@ -11,9 +14,8 @@ passive stock
 
 5, github page(javascript ajax https) -> position page (9:00 - 11:30, 12:30 - 15:00)
 
-jquery.min.js:4 Mixed Content: The page at 'https://tonydyb.github.io/gh-pages/' was loaded over HTTPS,
-but requested an insecure XMLHttpRequest endpoint 'http://sw'. This request has been blocked;
-the content must be served over HTTPS.
+Access to XMLHttpRequest at 'https://swing8306.ding-tokyo.info/currentPositions' from
+origin 'https://tonydyb.github.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
 
 4/15 - 4/28
 2，current_position https page, api
