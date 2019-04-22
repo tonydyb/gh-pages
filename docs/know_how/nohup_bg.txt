@@ -1,0 +1,22 @@
+keep-processes-running-after-ending-ssh-session
+
+https://askubuntu.com/questions/8653/how-to-keep-processes-running-after-ending-ssh-session
+
+Option 1: nohup
+The best way is often the simplest.
+
+nohup long-running-command &
+It was made specifically for this, it even logs stdout to nohup.log.
+
+man nohup
+Option 2: bg
+If you want to "background" some already running tasks, then your best bet is to Ctrl+Z then run
+
+bg
+to put your most recent suspended task to background, allowing it to continue running.
+
+Then a quick disown should keep the process running after you log out.
+
+screen and others can do it, but that's not what they're for. I recommend nohup for tasks you know your going to leave behind and bg for tasks your already running and don't want to re-start.
+
+Keep in mind, both are bash specific. If you're not using bash, then the commands could be different.
