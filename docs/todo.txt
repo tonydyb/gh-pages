@@ -19,11 +19,5 @@ the content must be served over HTTPS.
 4/15 - 4/28
 1，arbi indexをblankにする
 2，current_position https page, api
-3，
-
-5/1
-1, 冰箱门反转
-2, 衣柜加横杠，横着挂衣服
-3, 冬天衣服洗好收纳，春夏衣服整理
-4, 永驻申请资料调查，准备
-5, 多摩川→六本木 ６ヶ月定期購入
+3，https://dev.tencent.com/login 腾讯云开发平台邮箱登陆
+4,千代田化工below 300, daily定投
