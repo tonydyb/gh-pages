@@ -2,22 +2,29 @@ urgent
 
 passive stock
 
-1, 千代田化工建設 < 300,间隔10点 每天定投
+1, apache, certbot, Let's Encrypt : urcheck, swing8306
 
-2, current_position page, api
+2, SwingController refactor: read swing stock from swing_stock(id, code, direction, pivot, swap, take_profit, volumn) table.
 
-2, profit > 10,000yen or profit_rate > 5% alert per day, check per minute
+3, current_position current_rate current_profit cron (9:00 - 11:30, 12:30 - 15:00)
 
-3, profit > 10,000yen or profit_rate > 5% order fill(create or edit with current rate).
+4, 現物swing api
 
-4, honda history swing test. pivot: last month middle rate.
+5, 千代田化工建設 < 300, 间隔10点 每天定投
 
-5, github page(javascript ajax https) -> position page (9:00 - 11:30, 12:30 - 15:00)
+6, profit > 10,000yen or profit_rate > 5% alert per day, check per 5 minute
+
+7, honda history swing, pivot: last month middle rate.
+inspired by: 排除基本面影响，黄金单日单边行情到达10美金左右就会回调，然后抓这个回调.
+honda: 排除基本面影响，单边行情到达200点就会回调，然后抓这个回调.
+我：还有一个问题，其实你这种做单还有一个盈亏比并不是正期望。
+牛人：实际操作勉强达到1:1，一般来说还会小于1，要控制好这个，还得自己做出经验了才行。
+我：就是平衡好胜率和盈亏比。
+
+8, github page(javascript ajax https) -> position page (9:00 - 11:30, 12:30 - 15:00)
 
 Access to XMLHttpRequest at 'https://swing8306.ding-tokyo.info/currentPositions' from
-origin 'https://tonydyb.github.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+origin 'https://tonydyb.github.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin'
 
 4/15 - 4/28
-2，current_position https page, api
 3，https://dev.tencent.com/login 腾讯云开发平台邮箱登陆
-4,千代田化工below 300, daily定投
