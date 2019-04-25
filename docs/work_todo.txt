@@ -10,9 +10,9 @@ passive stock
 
 4, 現物swing api
 
-5, 千代田化工建設 < 300, 间隔10点 每天定投
+5, 千代田化工建設 < 310, 间隔10点 每天定投
 
-6, profit > 10,000yen or profit_rate > 5% alert per day, check per 5 minute
+6, profit_rate > 3.5% alert once, check per 5 minute
 
 7, honda history swing, pivot: last month middle rate.
 inspired by: 排除基本面影响，黄金单日单边行情到达10美金左右就会回调，然后抓这个回调.

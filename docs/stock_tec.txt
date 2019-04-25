@@ -1,0 +1,18 @@
+todo:
+1, 追涨杀跌: nikkei225監視, notify@14:30
+   if 3.5% down & 历史高点　then sell, add to swing list
+   if 3.5% up & 历史低点 then buy, add to swing list
+
+
+   nikkei225 历史高点(historic_high),历史低点(historic_low) 手動入力
+
+    auto judge:
+    around historic_high judge: current_rate > 90% * historic_high
+    around historic_low judge: current_rate < 110% * historic_low
+
+   win 10%
+   lose 3.5%
+
+2, rakuten可卖空code一覧
+
+3,
