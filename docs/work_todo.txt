@@ -1,12 +1,13 @@
 urgent
+永驻申请
 
 passive stock
 
-1, apache, certbot, Let's Encrypt : urcheck, swing8306
+done) 2, SwingController refactor: read swing stock from swing_stock(id, code, direction, pivot, swap, take_profit, volumn) table.
 
-2, SwingController refactor: read swing stock from swing_stock(id, code, direction, pivot, swap, take_profit, volumn) table.
-
-3, current_position current_rate current_profit cron (9:00 - 11:30, 12:30 - 15:00)
+3, current_position current_rate current_profit cron (9:00 - 11:30, 12:30 - 15:00) every 5 minutes.
+8, github page(javascript ajax https) -> position page (9:00 - 11:30, 12:30 - 15:00)
+   currentPositions current_rate, current_profit refresh every 5 minutes.
 
 4, 現物swing api
 
@@ -20,11 +21,3 @@ honda: 排除基本面影响，单边行情到达200点就会回调，然后抓�
 我：还有一个问题，其实你这种做单还有一个盈亏比并不是正期望。
 牛人：实际操作勉强达到1:1，一般来说还会小于1，要控制好这个，还得自己做出经验了才行。
 我：就是平衡好胜率和盈亏比。
-
-8, github page(javascript ajax https) -> position page (9:00 - 11:30, 12:30 - 15:00)
-
-Access to XMLHttpRequest at 'https://swing8306.ding-tokyo.info/currentPositions' from
-origin 'https://tonydyb.github.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin'
-
-4/15 - 4/28
-3，https://dev.tencent.com/login 腾讯云开发平台邮箱登陆
