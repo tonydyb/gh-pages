@@ -1,23 +1,2 @@
 urgent
 永驻申请
-
-passive stock
-
-done) 2, SwingController refactor: read swing stock from swing_stock(id, code, direction, pivot, swap, take_profit, volumn) table.
-
-3, current_position current_rate current_profit cron (9:00 - 11:30, 12:30 - 15:00) every 5 minutes.
-8, github page(javascript ajax https) -> position page (9:00 - 11:30, 12:30 - 15:00)
-   currentPositions current_rate, current_profit refresh every 5 minutes.
-
-4, 現物swing api
-
-5, 千代田化工建設 < 310, 间隔10点 每天定投
-
-6, profit_rate > 3.5% alert once, check per 5 minute
-
-7, honda history swing, pivot: last month middle rate.
-inspired by: 排除基本面影响，黄金单日单边行情到达10美金左右就会回调，然后抓这个回调.
-honda: 排除基本面影响，单边行情到达200点就会回调，然后抓这个回调.
-我：还有一个问题，其实你这种做单还有一个盈亏比并不是正期望。
-牛人：实际操作勉强达到1:1，一般来说还会小于1，要控制好这个，还得自己做出经验了才行。
-我：就是平衡好胜率和盈亏比。
