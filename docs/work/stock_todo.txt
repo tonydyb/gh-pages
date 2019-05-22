@@ -1,6 +1,7 @@
 todo:
-1, UFJ below 500每周定投
-   現物create order api
+1, UFJ below 500每周定投;
+   現物create order api;
+   千代田化工建設 below 290 buy每周定投, 348 sell;
    
 相信指数增长，耐心等待，惊喜会等着你。
 
