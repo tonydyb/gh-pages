@@ -1,6 +1,8 @@
 todo:
 1, UFJ below 500每周定投
    現物create order api
+   
+相信指数增长，耐心等待，惊喜会等着你。
 
 
 1, 追涨杀跌: nikkei225監視, notify@14:40
