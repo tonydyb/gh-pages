@@ -1,8 +1,13 @@
 todo:
+
+每周定投cron
+frequent order cron with minus point
+
 1, UFJ below 500每周定投;
    現物create order api;
-   千代田化工建設 below 290 buy每周定投, 348 sell;
-   
+   千代田化工建設 below 280 buy每周定投, 348 sell(276円 -> 400円 -> 600円);
+   KYB below 2800 buy每周定投,3050 sell
+
 相信指数增长，耐心等待，惊喜会等着你。
 
 
@@ -19,17 +24,9 @@ todo:
    win 10%
    no loss cut
 
-done) 2, frequently swing refactor
-
 done) ・Facebook $195 sell, $145 buy
       ・Oracle $54 sell, $44 buy
       ・Baba   sell
-
-
-
-
-
-
 
 
 
