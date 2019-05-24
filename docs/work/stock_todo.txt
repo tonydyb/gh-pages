@@ -5,28 +5,24 @@ frequent order cron with minus point
 
 1, UFJ below 500每周定投;
    現物create order api;
-   千代田化工建設 below 280 buy每周定投, 348 sell(276円 -> 400円 -> 600円);
+   千代田化工建設 below 280 buy每周定投, 348 sell(268円 -> 400円 -> 600円);
    KYB below 2800 buy每周定投,3050 sell
 
 相信指数增长，耐心等待，惊喜会等着你。
 
+done) ・Baba   sell
 
-1, 追涨杀跌: nikkei225監視, notify@14:40
-   if 3.5% down & 历史高点　then sell, add to swing list(pivot:current_rate, volumn:100, swap: 3.5%, take_profit: 11%)
-   if 3.5% up & 历史低点 then buy, add to swing list(pivot:current_rate, volumn:100, swap: 3.5%, take_profit: 11%)
+控制position信用銘柄数 <= 5
 
-   nikkei225 历史高点(historic_high),历史低点(historic_low) 手動入力
 
-  auto judge:
-    around historic_high judge: current_rate > 90% * historic_high
-    around historic_low judge: current_rate < 110% * historic_low
 
-   win 10%
-   no loss cut
 
-done) ・Facebook $195 sell, $145 buy
-      ・Oracle $54 sell, $44 buy
-      ・Baba   sell
+
+
+
+
+
+
 
 
 
