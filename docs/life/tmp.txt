@@ -1,0 +1,22 @@
+stock broke:
+
+http://stock_swing.ding-tokyo.info/stockRakuten/createOrder/userId/code/buyOrSell/rate/volumn/takeProfit
+
+http://stock_swing.ding-tokyo.info/stockRakuten/createOrder/1/6098/sell/3400/100/500
+
+{"msg":"OK","orderMsg":"userId: 1, code: 6098, direction: sell, rate: 3400, volumn: 100, takeProfit: 500 "}
+
+amazon:
+
+ADPと表示されている場合（注 5）
+商品の追跡： 注文履歴をご覧ください。
+
+再配達の依頼： 0120-899-068
+
+
+Amazonが発送
+トラッキングID: DA0011607466
+
+
+日本の一般的なビジネス慣習としてサービス終了までは最低１ヵ月必要になりますので、６月末終了にします。
+保守費も６月分（７月支払）まで払います。

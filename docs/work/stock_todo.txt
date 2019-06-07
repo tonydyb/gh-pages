@@ -1,11 +1,13 @@
 todo:
 
+味の素 1,900 sell
+
 每周定投cron
 frequent order cron with minus point
 
-1, UFJ below 450每周定投;
+1, UFJ below 480每周定投;
    現物create order api;
-   千代田化工建設 below 280 buy每周定投, 348 sell(268円 -> 400円 -> 600円);
+   千代田化工建設 below 280 buy每周定投, 316 sell(268円 -> 400円 -> 600円);
    KYB below 2750 buy每周定投,3050 sell
 
 相信指数增长，耐心等待，惊喜会等着你。
