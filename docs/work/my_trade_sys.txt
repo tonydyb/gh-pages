@@ -23,5 +23,5 @@ day up or down > 10%
 cron: check rate up or down > 10% daily, send to email and ifttt
 admin UI:
 api:
-db table: stock_watch_7
-column: id, country, name, code, current_rate, day_1_ymd, day_1_rate, ..., day_20_ymd, day_20_rate, created_at, updated_at
+db table: stock_watch_10
+column: id, country, name, code, current_rate, day_1_ymd, day_1_ratio, ..., day_20_ymd, day_20_ratio, created_at, updated_at
