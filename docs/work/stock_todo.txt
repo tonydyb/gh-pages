@@ -1,6 +1,8 @@
 todo:
 
-http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/9107/buy/1190/100/90
+http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/9107/buy/1208/100/150
+
+http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/8604/buy/360/500/40
 
 味の素 1920 sell
 

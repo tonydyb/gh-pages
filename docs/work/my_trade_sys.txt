@@ -8,3 +8,20 @@ stock
 0, 只有市场确认了你的判断你才能行动，这就是遵守纪律的精髓。
 1, 历史最高点回落，反弹，再下跌开始时，卖空入场，上一次反弹点上方出场。
 2，历史最低点反弹再下跌，未突破最低点，反弹开始时，买涨入场，至少盈利7%出场。
+
+编写程序研究市场数据
+
+1, stock rate high low notify:
+cron: check rate every 5 minutes, send to email and ifttt
+admin UI:
+api: all, add, remove, update, one
+db table: stock_notify
+column: id, country, name, code, current_rate, high, high_on_off, low, low_on_off, url, comment, created_at, updated_at
+
+2, stock_watch_10
+day up or down > 10%
+cron: check rate up or down > 10% daily, send to email and ifttt
+admin UI:
+api:
+db table: stock_watch_7
+column: id, country, name, code, current_rate, day_1_ymd, day_1_rate, ..., day_20_ymd, day_20_rate, created_at, updated_at
