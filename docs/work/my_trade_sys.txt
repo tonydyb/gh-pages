@@ -97,7 +97,7 @@ column: id, country, name, code, current_rate, day_1_ymd, day_1_ratio, ..., day_
 
 八、具体下单交易
 
-
+世界经济上行，只做多；世界经济下行或处于高点震荡，只做空。
 交易理念：选择已过最高点，第二浪无法突破前高点的股票，均线趋于平缓或下降，波段做空(PER>20, PBR>?)
 0, check (stock_watch_3.5，stock_watch_7， stock rate high low notify)
 1, manual add to watch list
