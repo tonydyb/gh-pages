@@ -1,3 +1,13 @@
+★ 第四题：你打算多少岁滚出雪球，过上“最爽的生活”？33岁？42岁？你必须告诉自己一个明确的数字。
+３７－４５（８年）
+2019/6: 200
+2020/6: 600 200% = 200 + 400(40m=10w=2d) = 10% * 20
+2021: 1800 200% = 600 + 1200(120m=30w=6d)
+2022: 5400 200%   40才
+2023: 16000 200%
+2024: 48000 200%
+2025: 144000 200%
+
 stock
 一手保证金：100,000jpy
 单位波动点值：7%
@@ -18,10 +28,98 @@ api: all, add, remove, update, one
 db table: stock_notify
 column: id, country, name, code, current_rate, high, high_on_off, low, low_on_off, url, comment, created_at, updated_at
 
-2, stock_watch_10
-day up or down > 10%
-cron: check rate up or down > 10% daily, send to email and ifttt
+2, stock_watch_7
+day up or down > 7%
+cron: check rate up or down > 7% daily, send to email and ifttt
 admin UI:
 api:
-db table: stock_watch_10
+db table: stock_watch_7
 column: id, country, name, code, current_rate, day_1_ymd, day_1_ratio, ..., day_20_ymd, day_20_ratio, created_at, updated_at
+
+2019:
+股价监视系统构建
+
+交易系统程序构建
+一、整体规划
+4.预期收益 200%
+5.资金分配 股票 90%, FX 10%
+
+二、策略选择
+趋势跟踪,顺势波段套利
+
+三、品种选择
+3.选股策略
+股票池是怎么选出来的，选股策略是怎样的：stock_watch_3.5，stock_watch_7， stock rate high low notify
+
+四、资金管理
+1.起始仓位
+最开始100股
+2.最高仓位
+最高不得超过50%仓位
+3.加仓
+（1）加仓条件： 方向正确
+（2）加仓比例：
+（3）加仓实施：
+4.减仓
+（1）减仓条件
+（2）减仓比例
+（3）减仓实施
+
+五、入场策略
+1.入场时机
+产品或者账户刚一成立，就立马入场，还是择机入场
+2.入场仓位
+立马就初始仓位全部入场，还是从试单开始一步步入场
+3.入场策略
+根据交易策略入场，还是主观判断入场
+
+六、多空方向和买卖点的选择
+1.多空方向
+做多还是做空，为什么
+2.多空时机
+什么时候做多，什么时候做空
+3.多空点位
+什么点位做多，什么点位做空
+4.参数设置
+具体的策略参数设置
+5.策略优化
+策略的逻辑优化，参数优化等
+
+七、风险控制
+1.止盈
+什么时候止盈，用什么方式止盈，最高盈利点回落比例，比如50%，还是一个固定的数值，比如盈利回吐2000元
+2.止损
+什么时候止损，用什么方式止损，这一单亏损占总资金比例，比如1%，还是一个固定的数值，比如亏损3000元
+3.预警
+是否设置预警线，如何设置预警线，如果临近和达到预警线，如何执行风控计划，减仓或者砍掉大量隔夜仓位还是怎样
+4.清盘
+是否设置止损线，如何设置止损线，如果临近和达到清盘线，如何执行清盘策略，在清盘线附近无视成本一键清仓，还是临近清盘线时循序渐进，逐步减仓直至清仓
+
+八、具体下单交易
+
+
+交易理念：选择已过最高点，第二浪无法突破前高点的股票，均线趋于平缓或下降，波段做空(PER>20, PBR>?)
+0, check (stock_watch_3.5，stock_watch_7， stock rate high low notify)
+1, manual add to watch list
+->
+2, mail notify, -3% rate auto add to order list
+->
+3, check rate, order broke cron (check rate every 5min，+0.6%下单)
+->
+4, deal notify by iSpeed app
+->
+5, 加仓条件：肉眼观察没有被套，方向正确；加仓比例：最大50%资金
+->
+6, >7% auto止盈 or 收盘利润出现回撤； 5%止损alert（6个月内不手动止损，也不加仓）
+
+
+股票交易系统步骤
+第一步：解决你的交易理念。
+第二步：认清自己。
+第三步：选择一个交易系统。
+第四步：代码化交易系统。
+第五步：优化参数。
+第六步：风险管理和资金管理。
+第七步：实盘和调整。
+第八步：耐心的等待。
+投资是一生的事业，记住：你永远承担不起一次破产风险。唯有复利可以引起资金量的质变，而复利需要时间。
