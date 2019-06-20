@@ -1,4 +1,12 @@
-2019/06 todo plan:
+2019 todo plan:
+
+swimming: Tuesday
+撸铁 Body training, Monday, Thursday:
+胸,
+腹,
+脚,
+running.
+
 
 Coverity
 Niuniu
@@ -8,3 +16,6 @@ Swimming 2019/06 - 2019/07
 
 2019/06 - 2019/08 todo plan:
 交易模型建立:
+stock_watch_3_two:连续两天上涨或下跌３％
+
+trade sys rebuild

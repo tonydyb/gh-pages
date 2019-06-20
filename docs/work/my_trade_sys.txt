@@ -14,11 +14,6 @@ stock
 盈亏比：2:1
 胜率：>80%
 
-2019/06:
-0, 只有市场确认了你的判断你才能行动，这就是遵守纪律的精髓。
-1, 历史最高点回落，反弹，再下跌开始时，卖空入场，上一次反弹点上方出场。
-2，历史最低点反弹再下跌，未突破最低点，反弹开始时，买涨入场，至少盈利7%出场。
-
 编写程序研究市场数据
 
 1, stock rate high low notify:
@@ -99,7 +94,7 @@ column: id, country, name, code, current_rate, day_1_ymd, day_1_ratio, ..., day_
 
 世界经济上行，只做多；世界经济下行或处于高点震荡，只做空。
 交易理念：选择已过最高点，第二浪无法突破前高点的股票，均线趋于平缓或下降，波段做空(PER>20, PBR>?)
-0, auto add to check_stock table (stock_watch_3.5，stock_watch_7， stock rate high low notify)
+0, auto add to check_stock table (stock_watch_3.5，stock_watch_7，stock_watch_3.5_two, stock rate high low notify)
 1, manual add to watch_stock table
 ->
 2, mail notify, -3% rate auto add to order_stock table

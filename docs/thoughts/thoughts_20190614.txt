@@ -6,7 +6,7 @@
 ２．現引手数料も無料
 ３．さらに売買代金が100万円以上なら金利、貸株料も無料！
 
-rakuten可半年做空stock调查
+rakuten可做空stock  list csv to db
 https://faq.rakuten-sec.co.jp/faq_detail.html?id=2128008
 一般信用取引で、空売りができる銘柄はどこで確認ができますか？　【ID:2128008】
 売建可能銘柄は、「一般信用売建銘柄」や注文画面で確認ができます。

@@ -1,13 +1,9 @@
 todo:
 
-http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/9107/buy/1208/100/150
+http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/9107/buy/1150/100/110
 
 http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/8604/buy/360/500/40
 
-味の素 1920 sell
-
-每周定投cron
-frequent order cron with minus point
 
 1, UFJ below 500每周定投;
    千代田化工建設 below 290 buy每周定投, 326 sell(268円 -> 400円 -> 600円);
