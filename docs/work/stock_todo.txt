@@ -4,9 +4,12 @@ http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/9107/buy
 ufj
 http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/8306/buy/498/100/45
 honda
-http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/7267/buy/2770/100/310
+http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/7267/buy/2730/100/310
 千代田化工建設
 http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/6366/buy/300/100/40
+
+第一三共 sell
+http://stock_swing.ding-tokyo.info/stockRakuten/createOrder/1/4568/sell/5800/100/210
 
 1, UFJ below 500每周定投;
    千代田化工建設 below 290 buy每周定投, 326 sell(268円 -> 400円 -> 600円);
