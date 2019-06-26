@@ -11,10 +11,10 @@ FX 資金プラン
 只想说有多大能力干多大的事儿，能力可以慢慢提升，硬干没有任何意义。
 
 我的投资投机系统（理念:顺周线趋势操作）：
-1，auto add to check_stock table 程序选股进股票池
-2，manual add to watch_stock table 程序监控高低点准备入场
-3, mail notify, +-3% rate auto add to order_stock table 高低点触发，自动加入下单table
-4, check rate, order broke cron (check rate every 5min，+-0.6%下单) 监控rate，自动下单
-5, deal notify by iSpeed app
+OK 1，auto add to check_stock table 程序选股进股票池
+OK 2，manual add to watch_stock table 程序监控高低点准备入场
+OK 3, mail notify, +-3% rate auto add to order_stock table 高低点触发，自动加入下单table
+OK 4, check rate, order broke cron (check rate every 5min，+-0.6%下单) 监控rate，自动下单
+OK 5, deal notify by iSpeed app
 6, 加仓条件：肉眼观察没有被套，方向正确；加仓比例：最大50%资金;满仓80%
-7, 设置7%止盈
+OK 7, 设置7%止盈
