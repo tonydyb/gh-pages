@@ -107,7 +107,6 @@ column: id, country, name, code, current_rate, day_1_ymd, day_1_ratio, ..., day_
 ->
 6, >7% auto止盈 or 收盘利润出现回撤； 5%止损alert（6个月内不手动止损，也不加仓）
 
-
 股票交易系统步骤
 第一步：解决你的交易理念：成为庄家，才能稳定赢钱。
 第二步：认清自己：适合边上班，边坐庄
@@ -134,3 +133,13 @@ column: id, country, name, code, current_rate, day_1_ymd, day_1_ratio, ..., day_
 而建立的交易系统是否赚钱只需不断地复盘与实盘验证。
 最终，你恍然大悟，你会发现大部分交易系统都是能够赚钱的。最终亏钱的人只是信念不够。与做人一致。人生观、价值观坚定的人不多，这或多或少构成了这个交易市场的2、8定律。
 所以，交易系统很简单，问自己，你的信念是什么？只要你愿意坚持她，执行她，不怀疑她，不离不弃，相互进步，相互成长。稳定盈利又有何难。
+
+投资是一生的事业，记住：你永远承担不起一次破产风险。唯有复利可以引起资金量的质变，而复利需要时间。
+我的投资投机系统（理念:顺周线趋势操作）：
+OK 1，auto add to check_stock table 程序选股进股票池
+OK 2，manual add to watch_stock table 程序监控高低点准备入场
+OK 3, mail notify, +-3% rate auto add to order_stock table 高低点触发，自动加入下单table
+OK 4, check rate, order broke cron (check rate every 5min，+-0.6%下单) 监控rate，自动下单
+OK 5, deal notify by iSpeed app
+6, 加仓条件：肉眼观察没有被套，方向正确；加仓比例：最大50%资金;满仓80%
+OK 7, 设置7%止盈
