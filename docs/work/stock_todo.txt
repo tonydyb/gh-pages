@@ -2,30 +2,17 @@ todo:
 川崎汽船
 http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/9107/buy/1210/100/110
 高島屋
-http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/8233/buy/1150/100/150
+http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/8233/buy/1200/500/280
 honda
 http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/7267/buy/2730/100/310
 千代田化工建設
-http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/6366/buy/300/200/36
-
+http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/6366/buy/280/1000/46
 第一三共 sell
-http://stock_swing.ding-tokyo.info/stockRakuten/createOrder/1/4568/sell/5800/100/210
-
-1, UFJ below 500每周定投;
-   千代田化工建設 below 290 buy每周定投, 326 sell(268円 -> 400円 -> 600円);
-   KYB below 2750 buy每周定投,3050 sell
+http://stock_swing.ding-tokyo.info/stockRakuten/createOrder/1/4568/sell/6100/100/210
 
 相信指数增长，耐心等待，惊喜会等着你。
-
 控制position信用銘柄数 <= 5
-
-我的交易模型：
-交易品种：恒生指数期货;
-一手保证金：300美金;
-单位波动点值：50港币;
-盈亏比：2:1; 胜率：>80%;
-
-1、成熟的交易系统的感觉就是无聊，盘中等待，有信号就下单，设止损，等待出场，交易大部分时间就是等待，无论空仓还是持仓。
+成熟的交易系统的感觉就是无聊，盘中等待，有信号就下单，设止损，等待出场，交易大部分时间就是等待，无论空仓还是持仓。
 
 
 --------------------------------------------------------------------------------
