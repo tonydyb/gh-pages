@@ -143,3 +143,33 @@ OK 4, check rate, order broke cron (check rate every 5min，+-0.6%下单) 监控
 OK 5, deal notify by iSpeed app
 6, 加仓条件：肉眼观察没有被套，方向正确；加仓比例：最大50%资金;满仓80%
 OK 7, 设置7%止盈
+
+程序定义上涨，下跌趋势:
+n = 3.5%
+d1 < d5*(1-n) < d10*(1-2n) < d15*(1-3n)
+
+d15 - d1
+
+1，半个月daily下跌趋势定义: condition -> signal -> order
+d12>d11 down+=1, down > 12*2/3
+d1 is lowest
+抓反转入场：处于历史低位，并且第二天出现反转信号
+
+2，3个月weekly下跌趋势定义:
+w12>w11 down+=1,, down > 12*2/3
+w1 is lowest
+抓反转入场：处于历史低位，并且第二周出现反转信号
+
+3，半个月daily上升趋势定义:
+抓反转入场：处于历史高位，并且第二天出现反转信号
+4，3个月weekly上升趋势定义:
+抓反转入场：处于历史高位，并且第二周出现反转信号
+
+condition_stock
+code
+condition text
+condition_comment
+condition_is_good
+signal text
+signal_comment
+signal_is_good
