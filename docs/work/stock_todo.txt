@@ -1,14 +1,21 @@
 todo:
+
+神戸製鋼所
+http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/5406/buy/678/200/80
 川崎汽船
 http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/9107/buy/1210/100/110
 高島屋
-http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/8233/buy/1200/500/280
+http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/8233/buy/1235/200/290
+(パルコ)
+http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/3086/buy/1235/100/390
 honda
 http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/7267/buy/2730/100/310
 千代田化工建設
 http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/6366/buy/280/1000/46
 第一三共 sell
 http://stock_swing.ding-tokyo.info/stockRakuten/createOrder/1/4568/sell/6100/100/210
+富士通ゼネラル
+http://stock_swing.ding-tokyo.info/stockRakuten/createOrder/1/6755/sell/1722/100/110
 
 相信指数增长，耐心等待，惊喜会等着你。
 控制position信用銘柄数 <= 5
