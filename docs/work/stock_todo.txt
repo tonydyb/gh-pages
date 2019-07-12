@@ -17,6 +17,8 @@ http://stock_swing.ding-tokyo.info/stockRakuten/createOrder/1/4568/sell/6100/100
 富士通ゼネラル
 http://stock_swing.ding-tokyo.info/stockRakuten/createOrder/1/6755/sell/1722/100/110
 
+http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/6140/buy/668/200/130
+
 相信指数增长，耐心等待，惊喜会等着你。
 控制position信用銘柄数 <= 5
 成熟的交易系统的感觉就是无聊，盘中等待，有信号就下单，设止损，等待出场，交易大部分时间就是等待，无论空仓还是持仓。
