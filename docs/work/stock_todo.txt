@@ -17,7 +17,14 @@ http://stock_swing.ding-tokyo.info/stockRakuten/createOrder/1/4568/sell/6100/100
 富士通ゼネラル
 http://stock_swing.ding-tokyo.info/stockRakuten/createOrder/1/6755/sell/1722/100/110
 
-http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/6140/buy/668/200/130
+--------------------------------------------------------------------------------
+http://stock_swing.ding-tokyo.info/stockRakuten/changeOrder/1/orderNo/rate
+http://stock_swing.ding-tokyo.info/stockRakuten/getOpenRetOrders/1
+
+
+{"msg":"OK","orders":[{"order_no":"3480","order_date":"07\/17  13:40","name":"三菱ＵＦＪフィナンシャルＧ","code":"8306","ret_or_new":"信用返済","sell_or_buy":"売埋","unlimited_or_6month":"制度\n（6ヶ月）","volumn":"600","ret_rate":"613.0","order_end_date":"2019\/08\/28"},{"order_no":"3479","order_date":"07\/17  11:27","name":"第一三共","code":"4568","ret_or_new":"信用返済","sell_or_buy":"買埋","unlimited_or_6month":"一般\n（無期限）","volumn":"100","ret_rate":"5,620.0","order_end_date":"2019\/08\/28"},{"order_no":"3475","order_date":"07\/16  23:19","name":"パルグループＨＬＤＧＳ","code":"2726","ret_or_new":"信用返済","sell_or_buy":"買埋","unlimited_or_6month":"一般\n（無期限）","volumn":"100","ret_rate":"3,470.0","order_end_date":"2019\/08\/28"},{"order_no":"3471","order_date":"07\/16  14:51","name":"ソニー","code":"6758","ret_or_new":"信用返済","sell_or_buy":"買埋","unlimited_or_6month":"一般\n（無期限）","volumn":"100","ret_rate":"5,611.0","order_end_date":"2019\/08\/27"},{"order_no":"3466","order_date":"07\/12  11:31","name":"カナデン","code":"8081","ret_or_new":"信用返済","sell_or_buy":"買埋","unlimited_or_6month":"一般\n（無期限）","volumn":"100","ret_rate":"1,355.0","order_end_date":"2019\/08\/26"},{"order_no":"3450","order_date":"07\/09  14:15","name":"ネクソン","code":"3659","ret_or_new":"信用返済","sell_or_buy":"買埋","unlimited_or_6month":"制度\n（6ヶ月）","volumn":"100","ret_rate":"1,562.0","order_end_date":"2019\/08\/21"},{"order_no":"3419","order_date":"06\/26  14:15","name":"リクルートホールディングス","code":"6098","ret_or_new":"信用返済","sell_or_buy":"買埋","unlimited_or_6month":"制度\n（6ヶ月）","volumn":"100","ret_rate":"2,890.0","order_end_date":"2019\/08\/07"},{"order_no":"3412","order_date":"06\/25  19:10","name":"ソニー","code":"6758","ret_or_new":"信用返済","sell_or_buy":"買埋","unlimited_or_6month":"制度\n（6ヶ月）","volumn":"100","ret_rate":"5,400.0","order_end_date":"2019\/08\/07"}]}
+
+
 
 相信指数增长，耐心等待，惊喜会等着你。
 控制position信用銘柄数 <= 5
