@@ -6,17 +6,8 @@ swimming: Tuesday
 腹,
 脚,
 running.
-matlab学习
 
-
-Coverity
 Niuniu
 Stock tech book
 Book
-Swimming 2019/06 - 2019/07
-
-2019/06 - 2019/08 todo plan:
-交易模型建立:
-stock_watch_3_two:连续两天上涨或下跌３％
-
-trade sys rebuild
+Swimming 2019/08 - 2019/09
