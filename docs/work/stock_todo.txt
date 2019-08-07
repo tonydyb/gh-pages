@@ -15,10 +15,13 @@ http://stock_swing.ding-tokyo.info/stockRakuten/createNoLeverageOrder/2/6366/buy
 第一三共 sell
 http://stock_swing.ding-tokyo.info/stockRakuten/createOrder/1/4568/sell/6100/100/210
 富士通ゼネラル
-http://stock_swing.ding-tokyo.info/stockRakuten/createOrder/1/6755/sell/1722/100/110
+
+http://stock_swing.ding-tokyo.info/stockRakuten/createOrder/1/7702/sell/770/100/50
+
 
 --------------------------------------------------------------------------------
-http://stock_swing.ding-tokyo.info/stockRakuten/changeOrder/1/orderNo/rate
+http://stock_swing.ding-tokyo.info/stockRakuten/changeOrderByCode/1/8081/752
+http://stock_swing.ding-tokyo.info/stockRakuten/changeOrder/1/3466/1415
 http://stock_swing.ding-tokyo.info/stockRakuten/getOpenRetOrders/1
 
 
