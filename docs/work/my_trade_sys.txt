@@ -8,28 +8,7 @@
 2024: 48000 200%
 2025: 144000 200%
 
-stock
-一手保证金：100,000jpy
-单位波动点值：7%
-盈亏比：2:1
-胜率：>80%
-
 编写程序研究市场数据
-
-1, stock rate high low notify:
-cron: check rate every 5 minutes, send to email and ifttt
-admin UI:
-api: all, add, remove, update, one
-db table: stock_notify
-column: id, country, name, code, current_rate, high, high_on_off, low, low_on_off, url, comment, created_at, updated_at
-
-2, stock_watch_7
-day up or down > 7%
-cron: check rate up or down > 7% daily, send to email and ifttt
-admin UI:
-api:
-db table: stock_watch_7
-column: id, country, name, code, current_rate, day_1_ymd, day_1_ratio, ..., day_20_ymd, day_20_ratio, created_at, updated_at
 
 2019:
 股价监视系统构建
