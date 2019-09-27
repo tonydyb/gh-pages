@@ -1,0 +1,16 @@
+2019/10 Todo:
+work option todo:
+1, spi: next gennba
+2, next company: 自社開発
+3, next company: genba開発
+4, free: next gennba, spi経由
+5, free: next gennba, agent company経由
+6, free: work at home
+
+asset todo:
+1, monthly saving invest
+2, stock, fx, cfd
+
+stock todo:
+1, conditionStock改善
+2, 历史数据样本测试
