@@ -1,0 +1,3 @@
+https://github.com/ArthurAnanda/MACD_visualize.git
+
+https://github.com/derialstrazus/MACD.git
