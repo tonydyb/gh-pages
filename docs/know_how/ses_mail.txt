@@ -1,0 +1,53 @@
+require_once ROOT_DIR . '/include.php';
+require_once ROOT_DIR . '/library/aws.phar';
+
+use Aws\Ses\SesClient;
+
+function ifsetor(&$variable, $default = null) {
+    if (isset($variable)) {
+        $tmp = $variable;
+    } else {
+        $tmp = $default;
+    }
+    return $tmp;
+}
+
+// email me
+function mail_me($text) {
+    if (ENVIRONMENT == 'production') {
+        $client = SesClient::factory(array(
+                    'key' => 'AKIAAA',
+                    'secret' => 'qmkw793JK0zRqBsQw',
+                    'region' => 'us-east-1',
+                    'base_url' => 'https://email.us-east-1.amazonaws.com',
+        ));
+
+        $result = $client->sendEmail(array(
+            'Source' => 'rezoo_support@rezoo.biz',
+            'Destination' => array(
+                'ToAddresses' => array('dingyoubing@gmail.com')
+            ),
+            'Message' => array(
+                'Subject' => array(
+                    'Data' => "Rezoo Exception",
+                    'Charset' => 'ISO-2022-JP',
+                ),
+                'Body' => array(
+                    'Text' => array(
+                        'Data' => "
+$text
+
+━━━━━━━━━━━━ 
+rezooサポート 
+rezoo_support@rezoo.biz 
+━━━━━━━━━━━━",
+                        'Charset' => 'ISO-2022-JP',
+                    ),
+                ),
+            ),
+            'ReplyToAddresses' => array('dingyoubing@gmail.com'),
+            'ReturnPath' => 'rezoobiz@gmail.com',
+        ));
+    }
+}
+
