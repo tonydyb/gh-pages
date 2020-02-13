@@ -1,9 +1,6 @@
 todo:
 
 --------------------------------------------------------------------------------
-http://stock_swing.ding-tokyo.info/stockRakuten/changeOrderByCode/1/8081/752
-http://stock_swing.ding-tokyo.info/stockRakuten/changeOrder/1/3466/1415
-
 
 相信指数增长，耐心等待，惊喜会等着你。
 控制position信用銘柄数 <= 5
