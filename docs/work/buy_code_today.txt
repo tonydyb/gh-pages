@@ -1,0 +1,120 @@
+SELECT code_select.*,
+       macd_day_week_filter.end_value,
+       Curdate() as ymd
+FROM   (SELECT code,
+               name,
+               tag
+        FROM   (SELECT a.code,
+                       stocks.name,
+                       a.ymd                                             AS ymd1
+                       ,
+                       a.end_value
+                       AS end_value1,
+                       b.ymd                                             AS ymd2
+                       , 
+                       b.end_value
+                       AS end_value2,
+                       ( a.end_value - b.end_value ) / b.end_value * 100 AS
+                       up_per,
+                       'today3.5up'                                      AS tag
+                FROM   stock_daily_histories a
+                       JOIN stock_daily_histories b
+                         ON a.code = b.code
+                       JOIN stocks
+                         ON a.code = stocks.code
+                WHERE  a.ymd = Curdate()
+                       AND b.ymd = (SELECT Max(ymd) AS one_day_ago
+                                    FROM   stock_daily_histories
+                                    WHERE  ymd < Curdate())
+                       AND ( a.end_value - b.end_value ) / b.end_value * 100 >
+                           3.5) AS
+               a_set
+        UNION
+        SELECT code,
+               name,
+               tag
+        FROM   (SELECT a.code,
+                       s.name,
+                       a.ymd            AS ymd1,
+                       b.ymd            AS ymd2,
+                       c.ymd            AS ymd3,
+                       a.end_value      AS end_value1,
+                       b.end_value      AS end_value2,
+                       c.end_value      AS end_value3,
+                       'day_day_day_up' AS tag
+                FROM   stock_daily_histories a
+                       JOIN stock_daily_histories b
+                         ON a.code = b.code
+                       JOIN stock_daily_histories c
+                         ON a.code = c.code
+                       JOIN stocks s
+                         ON a.code = s.code
+                WHERE  a.ymd = Curdate()
+                       AND b.ymd = (SELECT Max(ymd) AS one_day_ago
+                                    FROM   stock_daily_histories
+                                    WHERE  ymd < Curdate())
+                       AND c.ymd = (SELECT Max(ymd) AS two_day_ago
+                                    FROM   stock_daily_histories
+                                    WHERE  ymd < (SELECT Max(ymd) AS one_day_ago
+                                                  FROM   stock_daily_histories
+                                                  WHERE  ymd < Curdate()))
+                       AND a.end_value > b.end_value
+                       AND b.end_value > c.end_value) AS b_set
+        UNION
+        SELECT code,
+               name,
+               tag
+        FROM   (SELECT a.code,
+                       stocks.name,
+                       a.ymd,
+                       'gold_cross_daily' AS tag
+                FROM   gold_cross_dailys a
+                       JOIN stocks
+                         ON a.code = stocks.code
+                WHERE  a.ymd = Curdate()) AS c_set) AS code_select
+       INNER JOIN (SELECT a_set.*,
+                          b_set.macd1 AS week_macd1,
+                          b_set.macd2 AS week_macd2
+                   FROM   (SELECT a.code,
+                                  s.name,
+                                  a.ymd,
+                                  a.end_value,
+                                  a.macd AS macd1,
+                                  b.macd AS macd2
+                           FROM   stock_daily_histories a
+                                  JOIN stock_daily_histories b
+                                    ON a.code = b.code
+                                  JOIN stocks s
+                                    ON a.code = s.code
+                           WHERE  a.ymd = (SELECT Max(ymd)
+                                           FROM   stock_daily_histories)
+                                  AND b.ymd = (SELECT Max(ymd)
+                                               FROM   stock_daily_histories
+                                               WHERE
+                                      ymd < (SELECT Max(ymd)
+                                             FROM   stock_daily_histories))
+                                  AND a.macd > 0
+                                  AND a.macd > b.macd) AS a_set
+                          INNER JOIN (SELECT a.code,
+                                             s.name,
+                                             a.ymd,
+                                             a.end_value,
+                                             a.macd AS macd1,
+                                             b.macd AS macd2
+                                      FROM   stock_weeklies a
+                                             JOIN stock_weeklies b
+                                               ON a.code = b.code
+                                             JOIN stocks s
+                                               ON a.code = s.code
+                                      WHERE  a.ymd = (SELECT Max(ymd)
+                                                      FROM   stock_weeklies)
+                                             AND b.ymd = (SELECT Max(ymd)
+                                                          FROM   stock_weeklies
+                                                          WHERE
+                                                 ymd < (SELECT Max(ymd)
+                                                        FROM   stock_weeklies))
+                                             AND a.macd > 0
+                                             AND a.macd > b.macd) AS b_set
+                                  ON a_set.code = b_set.code) AS
+                  macd_day_week_filter
+               ON code_select.code = macd_day_week_filter.code;
