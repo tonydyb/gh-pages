@@ -1,0 +1,13 @@
+3，gold_cross_daily
+SELECT
+   a.code,
+   stocks.name,
+   a.ymd
+FROM
+   gold_cross_dailys a
+   JOIN
+       stocks
+   ON  a.code = stocks.code
+WHERE
+   a.ymd = Curdate()
+;

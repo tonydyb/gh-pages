@@ -1,0 +1,20 @@
+basic_filter 1, macd_month > 0,
+SELECT a.code,
+       s.name,
+       a.ymd,
+       a.end_value,
+       a.macd as macd1,
+       b.macd as macd2
+FROM   stock_monthlies a
+       JOIN stock_monthlies b
+         ON a.code = b.code
+       JOIN stocks s
+         ON a.code = s.code
+WHERE  a.ymd = (SELECT Max(ymd)
+                FROM   stock_monthlies)
+       AND b.ymd = (SELECT Max(ymd)
+                    FROM   stock_monthlies
+                    WHERE  ymd < (SELECT Max(ymd)
+                                  FROM   stock_monthlies))
+       AND a.macd > 0
+       AND a.macd > b.macd;

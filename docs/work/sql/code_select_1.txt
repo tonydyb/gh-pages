@@ -1,0 +1,55 @@
+1，当天上涨3.5%以上
+SELECT a.code,
+       stocks.name,
+       a.ymd                                             AS ymd1,
+       a.end_value                                       AS end_value1,
+       b.ymd                                             AS ymd2,
+       b.end_value                                       AS end_value2,
+       ( a.end_value - b.end_value ) / b.end_value * 100 AS up_per,
+       'today3.5up' as tag
+FROM   stock_daily_histories a
+       JOIN stock_daily_histories b
+         ON a.code = b.code
+       JOIN stocks
+         ON a.code = stocks.code
+WHERE  a.ymd = Curdate()
+       AND b.ymd = (SELECT Max(ymd) AS one_day_ago
+                    FROM   stock_daily_histories
+                    WHERE  ymd < Curdate())
+       AND ( a.end_value - b.end_value ) / b.end_value * 100 > 3.5;
+
+1，当天下降·3.5%以上
+SELECT a.code,
+       stocks.name,
+       a.ymd                                             AS ymd1,
+       a.end_value                                       AS end_value1,
+       b.ymd                                             AS ymd2,
+       b.end_value                                       AS end_value2,
+       ( a.end_value - b.end_value ) / b.end_value * 100 AS up_per,
+       'today3.5down' as tag
+FROM   stock_daily_histories a
+       JOIN stock_daily_histories b
+         ON a.code = b.code
+       JOIN stocks
+         ON a.code = stocks.code
+WHERE  a.ymd = Curdate()
+       AND b.ymd = (SELECT Max(ymd) AS one_day_ago
+                    FROM   stock_daily_histories
+                    WHERE  ymd < Curdate())
+       AND ( a.end_value - b.end_value ) / b.end_value * 100 < -3.5;
+
+1, today_gold_cross
+SELECT a.code,
+       stocks.name
+FROM   gold_cross_dailys a
+       JOIN stocks
+         ON a.code = stocks.code
+WHERE  a.ymd = CURDATE();
+
+1, today_dead_cross
+SELECT a.code,
+       stocks.name
+FROM   dead_cross_dailys a
+       JOIN stocks
+         ON a.code = stocks.code
+WHERE  a.ymd = CURDATE();

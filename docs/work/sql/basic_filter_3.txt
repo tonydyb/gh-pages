@@ -1,0 +1,20 @@
+basic_filter 3, macd_daily > 0, macd1 > macd2
+SELECT a.code,
+       s.name,
+       a.ymd,
+       a.end_value,
+       a.macd AS macd1,
+       b.macd AS macd2
+FROM   stock_daily_histories a
+       JOIN stock_daily_histories b
+         ON a.code = b.code
+       JOIN stocks s
+         ON a.code = s.code
+WHERE  a.ymd = (SELECT Max(ymd)
+                FROM   stock_daily_histories)
+       AND b.ymd = (SELECT Max(ymd)
+                    FROM   stock_daily_histories
+                    WHERE  ymd < (SELECT Max(ymd)
+                                  FROM   stock_daily_histories))
+       AND a.macd > 0
+       AND a.macd > b.macd;

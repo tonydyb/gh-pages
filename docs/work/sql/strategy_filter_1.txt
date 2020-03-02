@@ -1,0 +1,7 @@
+strategy_filter 1:
+            股价长时间下降(最近2年): value(y-m-d, -2 year) > value(y-m-d, -1 year) > value(y-m-d)
+            2年股价，最近3个月内接近2年最低点: y-m-d(min_value) > y-m-d(-3 month)
+            最近(5天)从最低点强烈回升: recent_min_value < today_value * 0.95
+
+
+select code, min(end_value) as min_end_value_in_two_years from stock_daily_histories where ymd > DATE_ADD(Curdate(), INTERVAL -2 YEAR) group by code;

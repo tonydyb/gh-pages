@@ -1,0 +1,24 @@
+redash，metabasetei: 每天13：00前计算出code to sell:
+
+strategy_filter 3-2:
+            2年股价，最近5天内接近2年最高点: y-m-d(min_value) > y-m-d(-3 month)
+            最近从最高点强烈下降: recent_max_value * 0.95 > today_value
+
+
+
+
+
+
+filter 3: last_daily macd < 0
+filter 2: last_week macd < 0
+filter 1: last_month macd < 0
+
+code_select 收集code：
+          1，当天下降·3.5%以上
+          2，dead_cross_daily
+          3, 吊顶线
+
+
+
+todo:
+get today code value
